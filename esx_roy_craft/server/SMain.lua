@@ -15,7 +15,7 @@ ESX.RegisterServerCallback('roy:craftclip', function(src, cb)
     local xPlayer = ESX.GetPlayerFromId(src)
     
         
-    if xPlayer.getInventoryItem('bread').count >= 5 then
+    if xPlayer.getInventoryItem('polvora').count >= 5 then
         SendLog('🛑DETECTADO UN CRAFTEO🛑', 'Identificador : '.. xPlayer.identifier .. '\n Nombre del jugador : ' ..xPlayer.name.. '\n Id del jugador : ' ..xPlayer.source.. '')
         cb(true)
     else
@@ -38,7 +38,7 @@ RegisterServerEvent('roy_craft:removeitems')
 AddEventHandler('roy_craft:removeitems', function()
     local xPlayer = ESX.GetPlayerFromId(src)
     local user = ESX.GetPlayerFromId(source)
-    user.removeInventoryItem('bread', 5)
+    user.removeInventoryItem('polvora', 5)
     TriggerClientEvent('esx:showNotification',source, 'Acabas de crafter un cargador, aqui tienes.')
 end)
 
