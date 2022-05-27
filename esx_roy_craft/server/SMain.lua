@@ -3,7 +3,7 @@ ESX = nil
 print"Created by itsRoyal#7294"
 
 Discord = {}
-Discord.Webhook = "https://discord.com/api/webhooks/977903779569602611/rgf-BoQfj-5xXarq3lRMcQJRekEfDhPbMtzSyBmDl9IX0D5jtD1Yk5xgdReMEqIZ_DHB"
+Discord.Webhook = ""
 Discord.Avatar = ""
 Discord.Colour = 343201
 
